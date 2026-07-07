@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CedrusTech Solutions</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+
+
+<div id="dashboard" class="page active">
+
+  <!-- LOGO -->
+  <div class="logo-section">
+    <img src="logo.png" class="logo-img" />
+  </div>
+
+  <!-- CHATBOT -->
+  <div class="chatbot-container">
+
+    <!-- HEADER -->
+    <div class="chatbot-header">
+      CedrusTech AI Assistant ☺
+    </div>
+
+    <!-- BODY -->
+    <div class="chatbot-body">
+
+      <!-- CHAT AREA -->
+      <div
+        class="chatbot-messages"
+        id="chatbot-messages"
+      >
+
+        <div class="message bot">
+          Hello! Welcome to CedrusTech HR System.
+          Ask me anything about:
+          internships, HR, applicants, or CedrusTech.
+        </div>
+
+      </div>
+
+      <!-- INPUT AREA -->
+      <div class="chatbot-input-area">
+
+        <input
+          type="text"
+          id="chatbot-input"
+          class="chatbot-input"
+          placeholder="Ask CedrusTech AI..."
+        />
+
+        <button
+          id="chatbot-send"
+          class="chatbot-send-btn"
+        >
+          Send
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- APPLY BUTTON -->
+  <div class="apply-section">
+
+    <button
+      class="apply-btn"
+      onclick="showApplicationForm()"
+    >
+      Apply for a Job
+    </button>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    CedrusTech || CedrusTech.hr@gmail.com
+  </div>
+
+</div>
+
+
+
+  <!-- ================= APPLICATION FORM ================= -->
+
+  <div id="application-form" class="page">
+
+    <!-- LOGO -->
+    <div class="logo-section">
+      <img src="logo.png" class="logo-img" />
+    </div>
+
+    <!-- FORM -->
+    <form
+      class="form-container"
+      id="job-form"
+    >
+
+      <h2 class="form-title">
+        <u>Please enter your information</u>
+      </h2>
+
+      <!-- FIRST NAME -->
+      <div class="input-group">
+        <label>First Name :</label>
+
+        <input
+          type="text"
+          id="first-name"
+          required
+        >
+      </div>
+
+      <!-- LAST NAME -->
+      <div class="input-group">
+        <label>Last Name :</label>
+
+        <input
+          type="text"
+          id="last-name"
+          required
+        >
+      </div>
+
+      <!-- EMAIL -->
+      <div class="input-group">
+        <label>Email :</label>
+
+        <input
+          type="email"
+          id="email"
+          required
+        >
+      </div>
+
+      <!-- PHONE -->
+      <div class="input-group">
+        <label>Phone :</label>
+
+        <input
+          type="text"
+          id="phone"
+          required
+        >
+      </div>
+
+      <!-- DEPARTMENT -->
+      <div class="input-group">
+
+        <label>Department :</label>
+
+        <select
+          class="job-select"
+          id="department"
+          required
+        >
+
+          <option value="">Select Department</option>
+
+          <option value="6">
+            AI Engineer
+          </option>
+
+        </select>
+
+      </div>
+
+      <!-- CV UPLOAD -->
+      <div class="upload-section">
+
+        <label
+          for="cv-upload"
+          class="upload-btn"
+        >
+          Upload CV
+        </label>
+
+        <input
+          type="file"
+          id="cv-upload"
+          accept=".pdf,.doc,.docx"
+          required
+        />
+
+        <p id="file-name"></p>
+
+      </div>
+
+      <!-- COMMENT -->
+      <div class="comment-section">
+
+        <label class="comment-label">
+          Any Comment
+        </label>
+
+        <textarea
+          rows="4"
+          id="comment"
+          placeholder="Write your comment here..."
+        ></textarea>
+
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="form-actions">
+
+        <button
+          type="submit"
+          class="submit-btn"
+        >
+          Submit Application
+        </button>
+
+        <button
+          type="button"
+          class="back-btn"
+          onclick="showDashboard()"
+        >
+          Back to Home
+        </button>
+
+      </div>
+
+    </form>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      CedrusTech || CedrusTech.hr@gmail.com
+    </div>
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
