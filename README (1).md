@@ -1,14 +1,5 @@
 # CedrusTech HR System
 
-
-we choose topic A
-Assil chehade 6704
-ali ataya 6756
-mohammad hammoud 6460
-mohammad salloum 6494
-CedrusTech HR System is a real-time concurrent HR platform built with Java 17 and Spring Boot, handling 50+ simultaneous WebSocket clients through three bounded thread pools, backpressure, and a full CompletableFuture async pipeline. It integrates a Python RAG chatbot powered by Ollama llama3 and ChromaDB for intelligent company Q&A, an AI agent for automated CV scoring and candidate ranking, and a shared SQL Server database with distributed tracing and live concurrency metrics.
----
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -25,6 +16,12 @@ CedrusTech HR System is a real-time concurrent HR platform built with Java 17 an
 - [Environment Variables](#environment-variables)
 
 ---
+we choose topic A
+Assil chehade 6704
+ali ataya 6756
+mohammad hammoud 6460
+mohammad salloum 6494
+CedrusTech HR System is a real-time concurrent HR platform built with Java 17 and Spring Boot, handling 50+ simultaneous WebSocket clients through three bounded thread pools, backpressure, and a full CompletableFuture async pipeline. It integrates a Python RAG chatbot powered by Ollama llama3 and ChromaDB for intelligent company Q&A, an AI agent for automated CV scoring and candidate ranking, and a shared SQL Server database with distributed tracing and live concurrency metrics.
 
 ## Overview
 
